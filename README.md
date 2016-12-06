@@ -10,7 +10,8 @@ This is a skeleton to run Rails in docker-compose, based in [Quickstart: Compose
 Checkout and run:
 
 ```bash
-docker-compose run web rails new . --database=postgresql --skip-bundle
+# --force overrides README.md, .gitignore and Gemfile
+docker-compose run web rails new . --force --database=postgresql --skip-bundle
 sudo chown -R $USER:$USER .
 ```
 

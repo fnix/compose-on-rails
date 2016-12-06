@@ -19,9 +19,11 @@ sudo chown -R $USER:$USER .
 This is the list of gems needed to run the example Guardfile:
 
 ```ruby
+gem 'spring-commands-rspec'
 gem 'guard'
 gem 'guard-bundler', require: false
 gem 'guard-annotate'
 gem 'guard-foreman'
 gem 'guard-rspec', require: false
+gem 'parallel_tests'
 ```

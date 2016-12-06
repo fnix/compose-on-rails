@@ -16,7 +16,7 @@ services:
   spring:
     build: .
     volumes:
-      - .:/var/www/fnix
+      - .:/myapp
       - bundle:/usr/local/bundle
     command: spring server
 

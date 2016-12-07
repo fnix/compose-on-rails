@@ -9,6 +9,8 @@ This is a skeleton to run Rails in docker-compose, based in [Quickstart: Compose
 
 Just checkout and run `./bootstrap.sh`
 
+
+
 ### Guard
 
 This is the list of gems needed to run the example Guardfile:
@@ -22,3 +24,7 @@ gem 'guard-foreman'
 gem 'guard-rspec', require: false
 gem 'parallel_tests'
 ```
+
+After adding these gems you can use the following command for the web service:
+
+`command: bundle exec guard --plugin foreman annotate bundler -i`

@@ -7,9 +7,7 @@ This is a skeleton to run Rails in docker-compose, based in [Quickstart: Compose
 
 ### Usage
 
-Just checkout and run `./bootstrap.sh`
-
-
+Just checkout and run [`./bootstrap.sh`](https://github.com/cerdiogenes/compose-on-rails/blob/master/bootstrap.sh)
 
 ### Guard
 

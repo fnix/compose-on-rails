@@ -1,5 +1,5 @@
 FROM ruby:2.3.3-alpine
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
+RUN apk add --no-cache build-base postgresql-dev nodejs
 RUN mkdir /myapp
 WORKDIR /myapp
 ADD Gemfile /myapp/Gemfile

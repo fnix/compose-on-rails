@@ -1,7 +1,7 @@
 version: '2'
 services:
   db:
-    image: postgres
+    image: postgres:alpine
     command: -c fsync=off # *** don't use in production! ***
   web:
     build: .

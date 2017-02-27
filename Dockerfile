@@ -4,7 +4,8 @@ RUN apk add --no-cache \
   build-base \
   git \
   postgresql-dev \
-  nodejs
+  nodejs \
+  tzdata
 RUN mkdir /myapp
 WORKDIR /myapp
 ADD Gemfile /myapp/Gemfile

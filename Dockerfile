@@ -6,7 +6,7 @@ WORKDIR /myapp
 ADD Gemfile /myapp/Gemfile
 RUN bundle install --jobs 20 --retry 5
 ADD . /myapp
-RUN chown -R fnix-user:fnix-user .
+RUN chown -R fnix-user:fnix-user . && chown -R fnix-user:fnix-user /usr/local/bundle
 USER fnix-user
 
 CMD bundle exec puma -p $PORT

@@ -6,10 +6,10 @@ services:
   web:
     build: .
     image: fnix/compose-on-rails:5.1.0.beta1-alpine
-    user: fnix-user # user_id:group_id
+    user: skywalker # user_id:group_id
     command: bundle exec rails s -p 3000 -b '0.0.0.0'
     volumes:
-      - .:/myapp
+      - .:/xwing
       - bundle:/usr/local/bundle
     ports:
       - "3000:3000"
@@ -18,9 +18,9 @@ services:
   spring:
     build: .
     image: fnix/compoese-on-rails:2.3.3-alpine
-    user: fnix-user # user_id:group_id
+    user: skywalker # user_id:group_id
     volumes:
-      - .:/myapp
+      - .:/xwing
       - bundle:/usr/local/bundle
     command: spring server
 

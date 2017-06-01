@@ -5,7 +5,7 @@ services:
     command: -c fsync=off # *** don't use in production! ***
   web:
     build: .
-    image: fnix/compose-on-rails:5.1.0.beta1-alpine
+    image: fnix/web
     user: skywalker # user_id:group_id
     command: bundle exec rails s -p 3000 -b '0.0.0.0'
     volumes:
@@ -17,7 +17,7 @@ services:
       - db
   spring:
     build: .
-    image: fnix/compoese-on-rails:2.3.3-alpine
+    image: fnix/web
     user: skywalker # user_id:group_id
     volumes:
       - .:/xwing

@@ -23,6 +23,7 @@ services:
       - .:/xwing
       - ./.bundle/docker:/usr/local/bundle
     command: spring server
+    restart: always
 
     # This ensures that the pid namespace is shared between the host
     # and the container. It's not necessary to be able to run spring

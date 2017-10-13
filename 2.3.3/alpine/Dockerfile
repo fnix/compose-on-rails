@@ -1,4 +1,4 @@
-FROM ruby:2.4-alpine
+FROM ruby:2.3.3-alpine
 RUN /usr/sbin/adduser -D -u ${USER_ID:-1000} skywalker
 RUN apk add --no-cache \
   build-base \
